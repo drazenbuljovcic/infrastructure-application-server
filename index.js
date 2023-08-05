@@ -19,6 +19,7 @@ const permissions = {
 };
 
 app.get("/", async (req, res) => {
+  console.log({ headers: req.headers });
   const activeSpanContext = context.active();
   // const activeSpan = trace.getSpan(activeSpanContext);
 
