@@ -35,6 +35,7 @@ app.get("/", async (req, res) => {
 
 app.get("/distributed-information-node", async (req, res) => {
   const { sleep } = req.query;
+  console.log({ headers: req.headers });
 
   // const activeSpanContext = req.activeSpanContext;
   // const activeSpan = trace.getSpan(activeSpanContext);
